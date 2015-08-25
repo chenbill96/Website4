@@ -1,0 +1,114 @@
+.content{
+	overflow: auto;
+	margin-bottom: 65px;
+}
+
+.subContainer{
+	overflow: hidden;
+	border: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #202020;
+}
+
+
+/* ~~~~~~~~~~~~~~Column 1~~~~~~~~~~~~~~~~*/
+
+.col1{
+	height: 300px;
+	background-color: #202020;
+	float: left;
+	width: 37%;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+/* ~~~~~~~~~~~~~~Column 2~~~~~~~~~~~~~~~~*/
+
+.col2{
+	height: 300px;
+	background-color: #f0f0f0;
+	float: left;
+	width: 37%;
+
+	border: 0;
+	border-left: 1px;
+	border-right: 1px;
+	border-style: solid;
+	border-color: #202020;
+}
+
+.textContainer{
+	margin: 40px;
+}
+
+.textContainer h2{
+	margin-bottom: 20px;
+	font-style: italic;
+	font-size: 1em;
+}
+
+.textContainer h1{
+	margin-bottom: 7px;
+	font-weight: bolder;
+}
+
+.textContainer p{
+	line-height: 1.5;
+}
+
+.textContainer a{
+	text-decoration: none;
+	color: #f47710;
+}
+
+.textContainer a:hover{
+	text-decoration: underline;
+}
+
+
+/* ~~~~~~~~~~~~~~Column 3~~~~~~~~~~~~~~~~*/
+
+.col3{
+	height: 300px;
+	background-color: #f47710;
+	display: block;
+}
+
+@media (max-width: 890px){
+	.subContainer{
+		border:0;
+	}
+
+	.col1{
+		width: 50%;
+		float: left;
+
+		border: 0;
+		border-right: 1px;
+		border-style: solid;
+		border-color: #202020;
+	}
+
+	.col2{
+		width: 100%;
+		height: 200px;
+
+		border: 0;
+		border-bottom: 1px;
+		border-top: 1px;
+		border-style: solid;
+		border-color: #202020;
+	}
+
+	.col3{
+		width: 100%;
+	}
+}
+
+
+
+
+
+

@@ -72,18 +72,26 @@ footer{
 	margin-right: none;
 	padding: none;
 	margin-right: 10%;
+	color: #f0f0f0;
+	margin-top: 0;
 }
 
-#navItems li{
-	padding-top: 5px;
-	margin-top: 5px;
+#navItems a{
+	color: #f0f0f0;
 }
 
 #navItems a li{
-	color: #f0f0f0;
+	color: inherit;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.5em;
+	padding-top: 10px;
+	margin-top: 0px;
+}
+
+
+#navItems a #navSelected{
+	color: #f47710;;
 }
 
 #navItems li:hover{
@@ -167,6 +175,10 @@ footer p{
 
 @media (max-width: 890px){
 
+	.content{
+		padding-top: 64px;
+	}
+
 	.smallNavButton img{
 		width: 50px;
 		float: right;
@@ -175,31 +187,37 @@ footer p{
 		display: block;
 	}	
 
-	#navItems{
-		display: none;
-	}
-	#navItems li{
-		margin: 0;
-	}
 	#sideNav{
 		/*display: none;*/
 		height: 4em;
 		width: 100%;
 	}
+
 	#sideNav h1{
 		padding: 20px 20px 17px 17px;
 		display: inline-block;
 		font-size: 1.7em;
     	width: 200px;
-    	text-align: left;	}
-	#navItems{
+    	text-align: left;	
+    }
+
+    #navItems{
+		padding-top: 8px;
+		display: none;
 		text-align: left;
 		background-color: #303030;
 		margin: 0;
-		padding: 0;
+
+		border-top: 1px;
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 0px;
+		border-style: solid;
+		border-color: #f47710;
 	}
 
 	#navItems li{
+		padding-top: 10px;
 		text-align: left;
 		background-color: #303030;
 		padding: 0.75em;
@@ -224,6 +242,9 @@ footer p{
 /*~~~~~~~~~~~~~~~~~~~~~~Mobile Device (find a better way of doing this)~~~~~~~~~~~~~~~~~~~~~~~*/
 
 @media (max-device-width: 890px){
+	.content{
+		padding-top: 112px;
+	}
 
 	.smallNavButton img{
 		width: 100px;
@@ -233,41 +254,46 @@ footer p{
 		display: block;
 	}	
 
-	#navItems{
-		display: none;
-		font-size: 2.5em;
-	}
-	#navItems li{
-		margin: 0;
-		padding: 1em;
-	}
+
 	#sideNav{
-		/*display: none;*/
 		height: 7em;
 		width: 100%;
 	}
+
 	#sideNav h1{
-		padding: 30px 30px 26px 46px;
+		padding: 30px 30px 43px 46px;
 		display: inline-block;
 		font-size: 3.5em;
     	width: 200px;
     	text-align: left;	
+    	font-size: 2.5em;
     }
 
-
 	#navItems{
+		display: none;
 		text-align: left;
 		background-color: #303030;
 		margin: 0;
-		padding: 0;
+
+		border-top: 1px;
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 0px;
+		border-style: solid;
+		border-color: #f47710;
 	}
 
 	#navItems li{
 		text-align: left;
 		background-color: #303030;
-		padding: 0.75em;
-		font-size: 3em;
+		padding: 1em;
 	}
+
+	#navItems a li{
+		font-size: 3em;
+		padding-top: 1em;
+	}
+
 
 	.content{
 		margin-left: 0;
