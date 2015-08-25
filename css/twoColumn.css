@@ -1,0 +1,36 @@
+.content{
+	overflow: auto;
+	margin-bottom: 65px;
+}
+
+.subContainer{
+	overflow: hidden;
+	border: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #202020;
+}
+
+/*~~~~~~~~~~~~~~~Column~~~~~~~~~~~~~~~*/
+.col1{
+	height: 300px;
+	background-color: #f0f0f0;
+	float: left;
+	width: 50%;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+/* ~~~~~~~~~~~~~~Column 2~~~~~~~~~~~~~~~~*/
+
+.col2{
+	height: 300px;
+	background-color: #f47710;
+	float: right;
+	width: 50%;
+
+	border: 0;
+	border-style: solid;
+	border-color: #202020;
+}
