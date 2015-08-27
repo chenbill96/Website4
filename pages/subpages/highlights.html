@@ -31,7 +31,7 @@ Change:
         <link rel="stylesheet" type="text/css" href="../../css/twoColumn.css">
     </head>
 
-    <body>
+    <body ng-app="angular">
         <nav id="sideNav">
             <a><img src=""></a>
             <a href="#"><h1>Bill Chen</h1></a>
@@ -49,10 +49,18 @@ Change:
             </ul>
         </nav>
 
-        <div class="content">
-            <div class="subContainer">
-                <div class="col1"></div>
-                <div class="col2"></div>
+        <div class="content" ng-controller="highlightsList">
+            <div class="subContainer" ng-repeat="highlight in highlights">
+                <div class="col1" style="background-image:url({{highlight.image}})">
+                    {{highlight.name}}
+                    <a href="" ng-click="details =! details">Details</a>
+                </div>
+                <div class="col2">
+                    
+                </div>
+                <div class="dropdown" ng-show="details">
+                    
+                </div>
             </div>
         </div>
 
@@ -71,4 +79,8 @@ Change:
     <!-- Javascript -->
         <script type="text/javascript" src="../../js/jquery.js"></script>
         <script type="text/javascript" src="../../js/global.js"></script>
+        <script type="text/javascript" src="../../js/angular.js"></script>
+        <script type="text/javascript" src="../../js/angularApp.js"></script>
+        <script type="text/javascript" src="../../js/data/highlightsData.js"></script>
+
 </html>
